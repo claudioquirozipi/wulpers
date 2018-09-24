@@ -1,0 +1,109 @@
+.footer {
+
+	.footer__bg1 {
+		grid-area: 1/1/4/13;
+		height: 500px;
+		filter: drop-shadow(3px -3px 8px rgba(0,0,0,.4));
+		z-index: -1;
+		background-image: url(image/footer__bg1.svg);
+		background-size: auto 100%;
+		background-position: center top;
+		@media (min-width: $mediaS) {
+			background-size: 110% auto;
+		}
+
+	}
+	.footer__titulo1 {
+		grid-area: 2/2/3/12;
+		@media (min-width: $mediaS) {
+			margin: 50px 0;
+			}
+		// margin: 50px 0;
+		h3 {
+				font-size: 22px;
+				margin: 0;
+			@media (min-width: $mediaS) {
+				font-size: 40px;
+			}
+		}
+		h2 {
+			font-size: 45px;
+			@media (min-width: $mediaS) {
+			font-weight: 900;
+			font-size: 75px;
+			margin-top: 30px;
+			margin-bottom: 0;
+				
+			}
+		}
+	}
+	.footer__bg2 {
+		grid-area: 3/1/7/13;
+		filter: drop-shadow(3px -3px 8px rgba(0,0,0,.4));
+		z-index: -1;
+		background-image: url(image/footer__bg2.svg);
+		background-size: 100% 100%;
+	}
+	.footer__mailing {
+		grid-area: 4/2/5/12;
+		h2 {
+			font-size: 15px;
+			margin: 50px 0;
+
+			@media (min-width: $mediaS) {
+				font-size: 35px;
+				margin: 150px 0 50px;
+			}
+		}
+		form {
+
+			width: 80%;
+			// margin-bottom: 50px;
+			@media (min-width: $mediaS) {
+				width: auto;
+				// margin-bottom: 80px;
+			}
+		}
+	}
+	.footer__information {
+		grid-area: 5/2/1 span/12;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		@media (min-width: $mediaS) {
+			margin-top: 80px;
+			align-items: flex-start;
+		}
+		.footerInformationElement {
+			padding-left: 0;
+			width: 180px;	
+			@media (min-width: $mediaS) {
+				font-size: 23px;
+				width: auto;
+			}
+			li {
+				margin: 12px 0;
+			}
+		}
+	}
+	.footer__redes {
+		grid-area: 6/2/1 span/12;
+		margin: 50px 0;
+		.footerRedes__img {
+			width: 50px;
+			height: 50px;
+			margin: 0 15px;
+		}
+		.footer__facebook {
+			background-image: url(image/footer__facebook.png);
+			background-size: 100% 100%;
+		}
+		.footer__google {
+			background-image: url(image/footer__google.png);
+			background-size: 100% 100%;
+		}
+		.footer__instagram {
+			background-image: url(image/footer__instagram.png);
+			background-size: 100% 100%;
+		}
+	}
+}

@@ -1,0 +1,220 @@
+.checked__container {
+	display: none;
+	padding: 0 4%;
+	position: relative;
+	margin-bottom: 150px;
+	@media (min-width: $mediaS) {
+		display: block;
+	}
+	.checked__bottomContainer {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate( -50%, -50%);
+		display: flex;
+		justify-content: center;
+		
+	}
+	.checked__articleContainer {
+		background: #fff;
+		background-image: url(image/3/checked__bg.svg);
+		background-size: 100% auto;
+		background-position: bottom center;
+		background-repeat: no-repeat;
+		border-radius: 50px;
+		box-shadow: 3px 3px 10px 5px rgba(0,0,0,.3);
+		padding: 90px 6% 40px;
+		.checked__article {
+			display: none;
+			.checked__title {
+				text-align: center;
+			}
+			.article__bottom {
+				display: flex;
+				justify-content: center;
+				margin: 30px 0;
+			}
+		}
+		.checked__visible {
+			display: block;
+		}
+	}
+}
+
+
+.checked__container--mobile {
+	margin-bottom: 75px;
+	@media (min-width: $mediaS) {
+		display: none;
+	}
+	.checked__bottomContainer--mobile {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	.checked__articleContainer {
+		// border: 1px solid red;
+		.checked__article {
+			width: 100vw;
+			height: 100vh;
+			position: fixed;
+			top: 0;
+			left: 0;
+			overflow-y: scroll;
+			background: var(--white);
+			display: none;
+			z-index: 10;
+			padding: 50px 0 100px;
+			box-sizing: border-box;
+			.checked__title {
+				text-align: center;
+			}
+			.checked__article--mobile--cerrar {
+				position: fixed;
+				top: 25px;
+				right: 25px;
+				width: 50px;
+				height: 50px;
+				background-image: url(image/3/checked__okDark.svg);
+				background-size: 100% 100%;
+			}
+			.checked__list {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+			}
+			.article__bottom {
+				display: flex;
+				justify-content: center;
+			}
+		}
+		.checked__visible--mobile {
+			display: block;
+		}
+	}
+}
+
+
+
+.checked__bottom {
+	width: 100px;
+	height: 100px;
+	background: #fff;
+	border-radius: 50%;
+	margin: 0 0 50px;
+	cursor: pointer;
+	box-shadow: 3px 3px 10px 4px rgba(0,0,0,.3);
+	transition: transform .15s;
+	@media (min-width: $mediaS) {
+		margin: 0 80px;
+	}
+	&:hover {
+		transform: scale(1.2);
+	}
+}
+#checked__bottom1, #checked__bottom--mobile1 {
+	background-image: url(image/3/checked__icon1.svg);
+	background-size: 60% 60%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#checked__bottom2, #checked__bottom--mobile2 {
+	background-image: url(image/3/checked__icon2.svg);
+	background-size: 60% 60%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#checked__bottom3, #checked__bottom--mobile3 {
+	background-image: url(image/3/checked__icon3.svg);
+	background-size: 60% 60%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+.checked__list {
+	display: flex;
+	justify-content: space-between;
+	.list__ul {
+		padding: 0;
+		margin: 0 0 50px;
+		width: 210px;
+		@media (min-width: $mediaS) {
+			margin: 0;
+			width: auto;
+		}
+		.list__title {
+			font-size: 15px;
+			margin-bottom: 40px;
+			color: var(--black);
+			@media (min-width: $mediaS) {
+				font-size: 11px;
+			}
+			@media (min-width: $mediaM) {
+				font-size: 13px;
+			}
+			@media (min-width: $mediaM) {
+				font-size: 15px;
+			}
+		}
+		.list__li {
+			color: var(--black);
+			position: relative;
+			margin: 15px 0;
+			font-size: 12px;
+			@media (min-width: $mediaS) {
+				font-size: 8px;
+			}
+			@media (min-width: $mediaM) {
+				font-size: 10px;
+			}
+			@media (min-width: $mediaM) {
+				font-size: 12px;
+			}
+			&::before {
+				content: "";
+				display: block;
+				width: 15px;
+				height: 15px;
+				background-image: url(image/3/checked__ok.svg);
+				background-size: 100% 100%;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translate(-150%, -50%);
+				border-radius: 50%;
+			}
+		}
+		.list__li--Dark {
+			color: var(--black);
+			font-size: 12px;
+			position: relative;
+			margin: 15px 0;
+			@media (min-width: $mediaS) {
+				font-size: 8px;
+			}
+			@media (min-width: $mediaM) {
+				font-size: 10px;
+			}
+			@media (min-width: $mediaM) {
+				font-size: 12px;
+			}
+			&::before {
+				content: "";
+				display: block;
+				width: 17px;
+				height: 17px;
+				background-image: url(image/3/checked__okDark.svg);
+				background-size: 100% 100%;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translate(-139%, -50%);
+				border-radius: 50%;
+			}
+		}
+	}
+}
