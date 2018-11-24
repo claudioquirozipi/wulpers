@@ -32,22 +32,24 @@ var containerCheckedMobile1 = document.getElementById('checked__article--mobile1
 var containerCheckedMobile2 = document.getElementById('checked__article--mobile2');
 var containerCheckedMobile3 = document.getElementById('checked__article--mobile3');
 
+
 bottomCheckedMobile1.addEventListener("click", function(){
     containerCheckedMobile1.className = "checked__article checked__visible--mobile";
     containerCheckedMobile2.className = "checked__article";
     containerCheckedMobile3.className = "checked__article";
-    console.log(containerCheckedMobile1);
+    document.body.style.overflow = "hidden";
 });
 bottomCheckedMobile2.addEventListener("click", function(){
     containerCheckedMobile1.className = "checked__article";
     containerCheckedMobile2.className = "checked__article checked__visible--mobile";
     containerCheckedMobile3.className = "checked__article";
-    console.log(containerCheckedMobile1);
+    document.body.style.overflow = "hidden";
 });
 bottomCheckedMobile3.addEventListener("click", function(){
     containerCheckedMobile1.className = "checked__article";
     containerCheckedMobile2.className = "checked__article";
     containerCheckedMobile3.className = "checked__article checked__visible--mobile";
+    document.body.style.overflow = "hidden";
 });
 
 var cerrarMobile1 = document.getElementById("checked__article--mobile-cerrar1");
@@ -68,4 +70,5 @@ function cerrarMobile(){
 	containerCheckedMobile1.className = "checked__article";
     containerCheckedMobile2.className = "checked__article";
     containerCheckedMobile3.className = "checked__article";
+    document.body.style.overflow = "visible";
 }

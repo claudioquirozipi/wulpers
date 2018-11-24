@@ -3,6 +3,7 @@
 	--white: #fff;
 	--black: #1E384D;
 	--green: #2CD787;
+	--blue: #2E70E6;
 }
 // variables sass
 $shadow: 3px 3px 10px 0px rgba(0,0,0,.3);
@@ -38,8 +39,20 @@ body {
 	border-radius: 50px;
 	box-shadow: $shadow;
 	transition: transform .1s;
+	outline: none;
+	border: none;
+	cursor: pointer;
 	&:hover {
 		transform: scale(1.05);
+	}
+	@include media(sm) {
+		font-size: 35px;
+	}
+	@include media(md) {
+		font-size: 18px;
+	}
+	@include media(lg) {
+		font-size: 30px;
 	}
 }
 .cqform {	
@@ -52,7 +65,7 @@ body {
 	padding: 0px 25px;
 	background: var(--white);
 	z-index: 5;
-	@media (min-width: $mediaS) {
+	@include media(md) {
 		width: 	400px;
 	}
 
@@ -71,7 +84,7 @@ body {
 		&::placeholder {
 			color: #ccc;
 		}
-		@media (min-width: $mediaS) {
+		@include media(md) {
 			width: 	400px;
 		}
 	}
@@ -96,19 +109,31 @@ body {
 	font-size: 35px;
 	color: var(--black);
 	margin-bottom: 100px;
-	@media (min-width: $mediaS) {
+	@include media(sm) {
+		font-size: 50px;
+	}
+	@include media(md) {
 		font-size: 40px;
+	}
+	@include media(lg) {
+		font-size: 50px;
 	}
 }
 .title2 {
-	font-size: 20px;
+	font-size: 25px;
 	color: var(--black);
 	margin-top: 50px;
 	margin-bottom: 40px;
-	@media (min-width: $mediaS) {
+	@include media(sm) {
+		font-size: 40px;
+	}
+	@include media(md) {
 		font-size: 30px;
 		margin-top: 16px;
 		margin-bottom: 50px;
+	}
+	@include media(lg) {
+		font-size: 35px;
 	}
 }
 
@@ -120,7 +145,10 @@ body {
 .text2 {
 	font-size: 20px;
 	color: var(--black);
-	@media (min-width: $mediaS) {
+	@include media(sm) {
+		font-size: 30px;
+	}
+	@include media(md) {
 		line-height: 40px;
 		font-size: 25px;
 	}
@@ -129,7 +157,7 @@ body {
 	margin: 0;
 }
 .mt50 {
-	@media (min-width: $mediaS) {
+	@include media(md) {
 		margin-top: 50px;
 	}
 }

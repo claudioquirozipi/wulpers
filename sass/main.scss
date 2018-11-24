@@ -1,5 +1,8 @@
+@import 'mediaQuery';
 @import 'global';
 @import 'cq';
+@import 'cq/cards.scss';
+@import 'cq/send.scss';
 
 
 
@@ -8,6 +11,7 @@
 @import 'header';
 @import 'module1';
 @import 'moduleCard.scss';
+@import 'cardLogos.scss';
 @import 'checked';
 @import 'menu';
 @import 'footer';

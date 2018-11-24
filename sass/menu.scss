@@ -1,6 +1,6 @@
 .menu__Datos {
 	margin-bottom: 0;	
-	color: var(--green);
+	color: var(--blue);
 	font-size: 18px;
 	margin: 0px 0	;
 	display: block;	
@@ -9,7 +9,7 @@
 	padding: 15px 0;
 	border-radius: 5px;
 	&:hover {
-		background: var(--green);
+		background: var(--blue);
 		color: var(--white);
 	}
 }

@@ -3,7 +3,7 @@
 	padding: 0 4%;
 	position: relative;
 	margin-bottom: 150px;
-	@media (min-width: $mediaS) {
+	@include media(md) {
 		display: block;
 	}
 	.checked__bottomContainer {
@@ -44,7 +44,7 @@
 
 .checked__container--mobile {
 	margin-bottom: 75px;
-	@media (min-width: $mediaS) {
+	@include media(md) {
 		display: none;
 	}
 	.checked__bottomContainer--mobile {
@@ -108,8 +108,15 @@
 	cursor: pointer;
 	box-shadow: 3px 3px 10px 4px rgba(0,0,0,.3);
 	transition: transform .15s;
-	@media (min-width: $mediaS) {
+	@include media(sm) {
+		width: 200px;
+		height: 200px;
+		margin-bottom: 80px;
+	}
+	@include media(md) {
 		margin: 0 80px;
+		width: 100px;
+		height: 100px;
 	}
 	&:hover {
 		transform: scale(1.2);
@@ -142,7 +149,10 @@
 		padding: 0;
 		margin: 0 0 50px;
 		width: 210px;
-		@media (min-width: $mediaS) {
+		@include media(sm) {
+			width: 420px;
+		}
+		@include media(md) {
 			margin: 0;
 			width: auto;
 		}
@@ -150,13 +160,13 @@
 			font-size: 15px;
 			margin-bottom: 40px;
 			color: var(--black);
-			@media (min-width: $mediaS) {
+			@include media(sm) {
+				font-size: 30px;
+			}
+			@include media(md) {
 				font-size: 11px;
 			}
-			@media (min-width: $mediaM) {
-				font-size: 13px;
-			}
-			@media (min-width: $mediaM) {
+			@include media(lg) {
 				font-size: 15px;
 			}
 		}
@@ -165,14 +175,14 @@
 			position: relative;
 			margin: 15px 0;
 			font-size: 12px;
-			@media (min-width: $mediaS) {
-				font-size: 8px;
+			@include media(sm) {
+				font-size: 25px;
 			}
-			@media (min-width: $mediaM) {
-				font-size: 10px;
-			}
-			@media (min-width: $mediaM) {
+			@include media(md) {
 				font-size: 12px;
+			}
+			@include media(lg) {
+				font-size: 14px;
 			}
 			&::before {
 				content: "";
@@ -193,14 +203,14 @@
 			font-size: 12px;
 			position: relative;
 			margin: 15px 0;
-			@media (min-width: $mediaS) {
-				font-size: 8px;
+			@include media(sm) {
+				font-size: 25px;
 			}
-			@media (min-width: $mediaM) {
-				font-size: 10px;
-			}
-			@media (min-width: $mediaM) {
+			@include media(md) {
 				font-size: 12px;
+			}
+			@include media(lg) {
+				font-size: 14px;
 			}
 			&::before {
 				content: "";

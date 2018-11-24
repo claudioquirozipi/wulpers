@@ -8,27 +8,47 @@
 		background-image: url(image/footer__bg1.svg);
 		background-size: auto 100%;
 		background-position: center top;
-		@media (min-width: $mediaS) {
+		@include media(sm) {
+			background-size: 110% auto;
+		}
+
+	}
+	.footer__bg1-2 {
+		grid-area: 1/1/4/13;
+		height: 500px;
+		filter: drop-shadow(3px -3px 8px rgba(0,0,0,.4));
+		z-index: -1;
+		background-image: url(image/footer__bg1-2.svg);
+		background-size: auto 100%;
+		background-position: center top;
+		@include media(sm) {
 			background-size: 110% auto;
 		}
 
 	}
 	.footer__titulo1 {
 		grid-area: 2/2/3/12;
-		@media (min-width: $mediaS) {
+		@include media(md) {
 			margin: 50px 0;
 			}
 		// margin: 50px 0;
 		h3 {
 				font-size: 22px;
 				margin: 0;
-			@media (min-width: $mediaS) {
+			@include media(sm) {
+				font-size: 35px;
+			}
+			@include media(md) {
 				font-size: 40px;
 			}
+			
 		}
 		h2 {
 			font-size: 45px;
-			@media (min-width: $mediaS) {
+			@include media(sm) {
+				font-size: 70px;
+			}
+			@include media(md) {
 			font-weight: 900;
 			font-size: 75px;
 			margin-top: 30px;
@@ -49,8 +69,12 @@
 		h2 {
 			font-size: 15px;
 			margin: 50px 0;
+			@include media(sm) {
+				font-size: 30px;
+				margin-top: 100px;
+			}
 
-			@media (min-width: $mediaS) {
+			@include media(md) {
 				font-size: 35px;
 				margin: 150px 0 50px;
 			}
@@ -59,7 +83,7 @@
 
 			width: 80%;
 			// margin-bottom: 50px;
-			@media (min-width: $mediaS) {
+			@include media(md) {
 				width: auto;
 				// margin-bottom: 80px;
 			}
@@ -69,14 +93,18 @@
 		grid-area: 5/2/1 span/12;
 		margin-top: 50px;
 		margin-bottom: 50px;
-		@media (min-width: $mediaS) {
+		@include media(md) {
 			margin-top: 80px;
 			align-items: flex-start;
 		}
 		.footerInformationElement {
 			padding-left: 0;
 			width: 180px;	
-			@media (min-width: $mediaS) {
+			@include media(sm) {
+				font-size: 25px;
+				width: 250px;
+			}
+			@include media(md) {
 				font-size: 23px;
 				width: auto;
 			}

@@ -3,7 +3,7 @@
 	margin-bottom: 0;
 	.cqLeft {
 		margin-bottom: 200px;
-		@media (min-width: $mediaS) {
+		@include media(md) {
 			margin-bottom: 0;
 		}
 	}
@@ -13,23 +13,36 @@
 		width: 100%;
 		.card__bg1:before {
 			content: "";
-			width: 600px;
-			height: 700px;
+			width:358px;
+			height: 620px;
 			top: -50px;
 			position: absolute;
 			z-index: -1;
 			background-image: url(image/card__bg1.svg);
 			background-size: 100% 100%;
+			@include media(sm) {
+				width: 600px;
+			}
+			@include media(md) {
+				width: 600px;
+			}
 		}
+		
 		.card__bg2:before {
 			content: "";
-			width: 600px;
-			height: 700px;
+			width: 358px;
+			height: 620px;
 			top: -50px;
 			position: absolute;
 			z-index: -1;
 			background-image: url(image/card__bg2.svg);
 			background-size: 100% 100%;
+			@include media(sm) {
+				width: 600px;
+			}
+			@include media(md) {
+				width: 600px;
+			}
 		}
 		.moduleCard__Card {
 			background: var(--white);
@@ -41,8 +54,6 @@
 			position: relative;
 			box-shadow: $shadow;
 			border-radius: 40px;
-			position: relative;
-
 			.moduleCard__ul li  {
 				position: relative;
 				margin-bottom: 30px;
